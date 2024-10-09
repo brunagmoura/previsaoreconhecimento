@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Bibliotecas e base de dados &#8212; My sample book</title>
+    <title>&lt;no title&gt; &#8212; My sample book</title>
   
   
   
@@ -60,8 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'AnaliseExploratoria';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
-    <link rel="prev" title="Markdown Files" href="markdown.html" />
+    <link rel="prev" title="O projeto" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -175,19 +174,11 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Previsão do reconhecimento de estado de calamidade pública ou situação de emergência nos municípios brasileiros utilizando técnicas de Machine Learning
+                    O projeto
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Bibliotecas e base de dados</a></li>
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-</ul>
-
+        
     </div>
 </nav></div>
     </div>
@@ -371,7 +362,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Bibliotecas e base de dados</h1>
+    <h1><no title></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,11 +371,7 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Bibliotecas e base de dados</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-inicial-dos-dados">Análise inicial dos dados</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-ausentes">Valores ausentes</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-exploratoria-reconhecido-e-nao-reconhecido">Análise exploratória Reconhecido e Nao Reconhecido</a></li>
+                <ul class="simple visible nav section-nav flex-column">
 </ul>
 
             </nav>
@@ -397,40 +384,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#Aula 07.10.2024</p>
-<ol class="arabic simple">
-<li><p>Verificar formato e tamanho do arquivo de dados</p></li>
-<li><p>Identificar o tipo de dados</p></li>
-<li><p>Verificar dados nulos ou faltantes</p></li>
-</ol>
-<p>3.1 Imputar ou completar os dados</p>
-<ul class="simple">
-<li><p>Documentação para identificar se o valor é original ou se foi inputado</p></li>
-</ul>
-<ol class="arabic simple" start="4">
-<li><p>Identificar possíveis valores extremos ou outliers</p></li>
-</ol>
-<ul class="simple">
-<li><p>Verificar se é interessante ou não eliminar esses outliers</p></li>
-</ul>
-<ol class="arabic simple" start="5">
-<li><p>Explorar a distribuição das variáveis para entender frequência, amplitude e forma</p></li>
-<li><p>Verificar a correlação entre as variáveis</p></li>
-<li><p>Identificar a presença de dados duplicados</p></li>
-</ol>
-<ul class="simple">
-<li><p>Função que faz essa verificação</p></li>
-</ul>
-<ol class="arabic simple" start="8">
-<li><p>Explorar a relação entre as variáveis independentes e a variável alvo, no caso de um problema de aprendizado supervisionado</p></li>
-<li><p>Visualizar os dados de forma gráfica para identificar padrões e tendência</p></li>
-</ol>
-<ul class="simple">
-<li><p>Dispersão</p></li>
-<li><p>Histograma</p></li>
-</ul>
-<section class="tex2jax_ignore mathjax_ignore" id="bibliotecas-e-base-de-dados">
-<h1>Bibliotecas e base de dados<a class="headerlink" href="#bibliotecas-e-base-de-dados" title="Link to this heading">#</a></h1>
+  <p>#Análise exploratória de dados</p>
+<p>##Bibliotecas e base de dados</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
@@ -485,9 +440,7 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="analise-inicial-dos-dados">
-<h1>Análise inicial dos dados<a class="headerlink" href="#analise-inicial-dos-dados" title="Link to this heading">#</a></h1>
+<p>##Análise inicial dos dados</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_eventos</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -1625,9 +1578,7 @@ memory usage: 17.8+ MB
 <img alt="_images/e61adffc9f54c02407d8a8ce7979dd4c2d01dd553a79afbaa424d083906eadac.png" src="_images/e61adffc9f54c02407d8a8ce7979dd4c2d01dd553a79afbaa424d083906eadac.png" />
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="valores-ausentes">
-<h1>Valores ausentes<a class="headerlink" href="#valores-ausentes" title="Link to this heading">#</a></h1>
+<p>##Valores ausentes</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Contagem de valores ausentes por coluna:&quot;</span><span class="p">)</span>
@@ -1778,7 +1729,7 @@ memory usage: 17.8+ MB
 </div>
 </div>
 </div>
-<p>#PIB x Status</p>
+<p>##PIB x Status</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
@@ -1795,9 +1746,7 @@ memory usage: 17.8+ MB
 <img alt="_images/31272e7f4fbc34f76971e8dca9c6c2427934516007a753fa9dc3042a2aff9f05.png" src="_images/31272e7f4fbc34f76971e8dca9c6c2427934516007a753fa9dc3042a2aff9f05.png" />
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="analise-exploratoria-reconhecido-e-nao-reconhecido">
-<h1>Análise exploratória Reconhecido e Nao Reconhecido<a class="headerlink" href="#analise-exploratoria-reconhecido-e-nao-reconhecido" title="Link to this heading">#</a></h1>
+<p>##Análise exploratória Reconhecido e Nao Reconhecido</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_eventos_filtered</span> <span class="o">=</span> <span class="n">df_eventos</span><span class="p">[</span><span class="n">df_eventos</span><span class="p">[</span><span class="s1">&#39;Status&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Reconhecido&#39;</span><span class="p">,</span> <span class="s1">&#39;Não reconhecido&#39;</span><span class="p">])]</span>
@@ -2430,7 +2379,6 @@ memory usage: 17.8+ MB
 <img alt="_images/74cb255fd01634d68ed8edda57566a4e8b0b23f2dac41d8015c38fe2c2444621.png" src="_images/74cb255fd01634d68ed8edda57566a4e8b0b23f2dac41d8015c38fe2c2444621.png" />
 </div>
 </div>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -2463,22 +2411,13 @@ memory usage: 17.8+ MB
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="markdown.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Markdown Files</p>
+        <p class="prev-next-title">O projeto</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="markdown-notebooks.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -2495,11 +2434,7 @@ memory usage: 17.8+ MB
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Bibliotecas e base de dados</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-inicial-dos-dados">Análise inicial dos dados</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-ausentes">Valores ausentes</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-exploratoria-reconhecido-e-nao-reconhecido">Análise exploratória Reconhecido e Nao Reconhecido</a></li>
+    <ul class="simple visible nav section-nav flex-column">
 </ul>
 
   </nav></div>

@@ -1,11 +1,9 @@
-# Previsão do reconhecimento de estado de calamidade pública ou situação de emergência nos municípios brasileiros utilizando técnicas de Machine Learning
 
-## O projeto
-Texto texto texto
+# O projeto
+O projeto Previsão do reconhecimento de estado de calamidade pública ou situação de emergência nos municípios brasileiros utilizando técnicas de Machine Learning blablablablabla
 
-## Estado de calamidade pública ou situação de emergência
-Texto texto texto
+# Reconhecimento
+O reconhecimento de um município blablablabla
 
-
-```{tableofcontents}
-```
+#```{tableofcontents}
+#```
