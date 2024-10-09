@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>Análise exploratória de dados &#8212; My sample book</title>
   
   
   
@@ -178,7 +178,10 @@
                 </a>
             </li>
         </ul>
-        
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Análise exploratória de dados</a></li>
+</ul>
+
     </div>
 </nav></div>
     </div>
@@ -362,7 +365,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Análise exploratória de dados</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -371,9 +374,12 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliotecas-e-base-de-dados">Bibliotecas e base de dados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-inicial-dos-dados">Análise inicial dos dados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-ausentes">Valores ausentes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-exploratoria-reconhecido-e-nao-reconhecido">Análise exploratória Reconhecido e Nao Reconhecido</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -384,8 +390,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#Análise exploratória de dados</p>
-<p>##Bibliotecas e base de dados</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="analise-exploratoria-de-dados">
+<h1>Análise exploratória de dados<a class="headerlink" href="#analise-exploratoria-de-dados" title="Link to this heading">#</a></h1>
+<section id="bibliotecas-e-base-de-dados">
+<h2>Bibliotecas e base de dados<a class="headerlink" href="#bibliotecas-e-base-de-dados" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
@@ -440,7 +448,9 @@ document.write(`
 </div>
 </div>
 </div>
-<p>##Análise inicial dos dados</p>
+</section>
+<section id="analise-inicial-dos-dados">
+<h2>Análise inicial dos dados<a class="headerlink" href="#analise-inicial-dos-dados" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_eventos</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -1578,7 +1588,9 @@ memory usage: 17.8+ MB
 <img alt="_images/e61adffc9f54c02407d8a8ce7979dd4c2d01dd553a79afbaa424d083906eadac.png" src="_images/e61adffc9f54c02407d8a8ce7979dd4c2d01dd553a79afbaa424d083906eadac.png" />
 </div>
 </div>
-<p>##Valores ausentes</p>
+</section>
+<section id="valores-ausentes">
+<h2>Valores ausentes<a class="headerlink" href="#valores-ausentes" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Contagem de valores ausentes por coluna:&quot;</span><span class="p">)</span>
@@ -1746,7 +1758,9 @@ memory usage: 17.8+ MB
 <img alt="_images/31272e7f4fbc34f76971e8dca9c6c2427934516007a753fa9dc3042a2aff9f05.png" src="_images/31272e7f4fbc34f76971e8dca9c6c2427934516007a753fa9dc3042a2aff9f05.png" />
 </div>
 </div>
-<p>##Análise exploratória Reconhecido e Nao Reconhecido</p>
+</section>
+<section id="analise-exploratoria-reconhecido-e-nao-reconhecido">
+<h2>Análise exploratória Reconhecido e Nao Reconhecido<a class="headerlink" href="#analise-exploratoria-reconhecido-e-nao-reconhecido" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_eventos_filtered</span> <span class="o">=</span> <span class="n">df_eventos</span><span class="p">[</span><span class="n">df_eventos</span><span class="p">[</span><span class="s1">&#39;Status&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Reconhecido&#39;</span><span class="p">,</span> <span class="s1">&#39;Não reconhecido&#39;</span><span class="p">])]</span>
@@ -2379,6 +2393,8 @@ memory usage: 17.8+ MB
 <img alt="_images/74cb255fd01634d68ed8edda57566a4e8b0b23f2dac41d8015c38fe2c2444621.png" src="_images/74cb255fd01634d68ed8edda57566a4e8b0b23f2dac41d8015c38fe2c2444621.png" />
 </div>
 </div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -2434,9 +2450,12 @@ memory usage: 17.8+ MB
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliotecas-e-base-de-dados">Bibliotecas e base de dados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-inicial-dos-dados">Análise inicial dos dados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-ausentes">Valores ausentes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-exploratoria-reconhecido-e-nao-reconhecido">Análise exploratória Reconhecido e Nao Reconhecido</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
