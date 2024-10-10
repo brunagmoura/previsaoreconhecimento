@@ -61,6 +61,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Regressão logística" href="Regress%C3%A3o%20Log%C3%ADstica.html" />
     <link rel="prev" title="Análise exploratória dos dados" href="AnaliseExploratoria.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -176,6 +177,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="AnaliseExploratoria.html">Análise exploratória dos dados</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Pré processamento dos dados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Regress%C3%A3o%20Log%C3%ADstica.html">Regressão logística</a></li>
 </ul>
 
     </div>
@@ -357,10 +359,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliotecas-e-base-de-dados">Bibliotecas e base de dados</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exclusao-de-variaveis">Exclusão de variáveis</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-das-variaveis-categoricas">Encoding das variáveis categóricas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shuffle-das-variaveis-para-evitar-a-ordenacao-no-treino">Shuffle das variáveis para evitar a ordenação no treino</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-das-variaveis-categoricas">Encoding das variáveis categóricas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shuffle-das-variaveis-para-evitar-a-ordenacao-no-treino">Shuffle das variáveis para evitar a ordenação no treino</a></li>
 </ul>
             </nav>
         </div>
@@ -1709,8 +1709,9 @@ document.write(`
 </table>
 </div></div></div>
 </div>
+</section>
 <section id="shuffle-das-variaveis-para-evitar-a-ordenacao-no-treino">
-<h3>Shuffle das variáveis para evitar a ordenação no treino<a class="headerlink" href="#shuffle-das-variaveis-para-evitar-a-ordenacao-no-treino" title="Link to this heading">#</a></h3>
+<h2>Shuffle das variáveis para evitar a ordenação no treino<a class="headerlink" href="#shuffle-das-variaveis-para-evitar-a-ordenacao-no-treino" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_eventos</span> <span class="o">=</span> <span class="n">df_eventos</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -1728,7 +1729,6 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
 </section>
 </section>
 
@@ -1771,6 +1771,15 @@ document.write(`
         <p class="prev-next-title">Análise exploratória dos dados</p>
       </div>
     </a>
+    <a class="right-next"
+       href="Regress%C3%A3o%20Log%C3%ADstica.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Regressão logística</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -1789,10 +1798,8 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliotecas-e-base-de-dados">Bibliotecas e base de dados</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exclusao-de-variaveis">Exclusão de variáveis</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-das-variaveis-categoricas">Encoding das variáveis categóricas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shuffle-das-variaveis-para-evitar-a-ordenacao-no-treino">Shuffle das variáveis para evitar a ordenação no treino</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-das-variaveis-categoricas">Encoding das variáveis categóricas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shuffle-das-variaveis-para-evitar-a-ordenacao-no-treino">Shuffle das variáveis para evitar a ordenação no treino</a></li>
 </ul>
   </nav></div>
 
