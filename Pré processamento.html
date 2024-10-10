@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Bibliotecas e base de dados &#8212; Previsor de reconhecimento</title>
+    <title>Pré processamento dos dados &#8212; Previsor de reconhecimento</title>
   
   
   
@@ -175,8 +175,7 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="AnaliseExploratoria.html">Análise exploratória dos dados</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Bibliotecas e base de dados</a></li>
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pré processamento dos dados</a></li>
 </ul>
 
     </div>
@@ -346,7 +345,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Bibliotecas e base de dados</h1>
+    <h1>Pré processamento dos dados</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -356,10 +355,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Bibliotecas e base de dados</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-das-variaveis-categoricas">Encoding das variáveis categóricas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliotecas-e-base-de-dados">Bibliotecas e base de dados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exclusao-de-variaveis">Exclusão de variáveis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-das-variaveis-categoricas">Encoding das variáveis categóricas</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -370,9 +369,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>No pré-processamento dos dados foram…..</p>
+  <section id="pre-processamento-dos-dados">
+<h1>Pré processamento dos dados<a class="headerlink" href="#pre-processamento-dos-dados" title="Link to this heading">#</a></h1>
 <section id="bibliotecas-e-base-de-dados">
-<h1>Bibliotecas e base de dados<a class="headerlink" href="#bibliotecas-e-base-de-dados" title="Link to this heading">#</a></h1>
+<h2>Bibliotecas e base de dados<a class="headerlink" href="#bibliotecas-e-base-de-dados" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -933,6 +933,9 @@ document.write(`
 </table>
 </div></div></div>
 </div>
+</section>
+<section id="exclusao-de-variaveis">
+<h2>Exclusão de variáveis<a class="headerlink" href="#exclusao-de-variaveis" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Excluir variáveis que não serão adicionadas ao modelo</span>
@@ -969,7 +972,7 @@ document.write(`
 </div>
 </section>
 <section id="encoding-das-variaveis-categoricas">
-<h1>Encoding das variáveis categóricas<a class="headerlink" href="#encoding-das-variaveis-categoricas" title="Link to this heading">#</a></h1>
+<h2>Encoding das variáveis categóricas<a class="headerlink" href="#encoding-das-variaveis-categoricas" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">encoder</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">sparse_output</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>  
@@ -1340,6 +1343,7 @@ document.write(`
 </div></div></div>
 </div>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1396,10 +1400,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Bibliotecas e base de dados</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-das-variaveis-categoricas">Encoding das variáveis categóricas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliotecas-e-base-de-dados">Bibliotecas e base de dados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exclusao-de-variaveis">Exclusão de variáveis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-das-variaveis-categoricas">Encoding das variáveis categóricas</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
