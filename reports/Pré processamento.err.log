@@ -17,19 +17,25 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
 ------------------
 colunas_excluir_modelo2 = ['DM_total_danos_materiais', 'PEPL_total_publico', 'PEPR_total_privado']
 
-colunas_modelo2 = [col for col in df_eventos_2010_2017.columns if not col.startswith('regiao_') and col not in colunas_excluir_modelo2]
+colunas_modelo2_renda = ['Rendapercapita']
 
-df_eventos_2010_2017_modelo2 = df_eventos_2010_2017[colunas_modelo2]
+colunas_modelo2 = [col for col in df_eventos_2010_2017.columns 
+                   if not col.startswith('regiao_') 
+                   and col not in colunas_excluir_modelo2]
+
+df_eventos_2010_2017_modelo2 = df_eventos_2010_2017[colunas_modelo2 + colunas_modelo2_renda]
 df_eventos_2018_2024_modelo2 = df_eventos_2018_2024[colunas_modelo2]
 ------------------
 
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mKeyError[0m                                  Traceback (most recent call last)
-Cell [0;32mIn[13], line 6[0m
-[1;32m      3[0m colunas_modelo2 [38;5;241m=[39m [col [38;5;28;01mfor[39;00m col [38;5;129;01min[39;00m df_eventos_2010_2017[38;5;241m.[39mcolumns [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m col[38;5;241m.[39mstartswith([38;5;124m'[39m[38;5;124mregiao_[39m[38;5;124m'[39m) [38;5;129;01mand[39;00m col [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m colunas_excluir_modelo2]
-[1;32m      5[0m df_eventos_2010_2017_modelo2 [38;5;241m=[39m df_eventos_2010_2017[colunas_modelo2]
-[0;32m----> 6[0m df_eventos_2018_2024_modelo2 [38;5;241m=[39m [43mdf_eventos_2018_2024[49m[43m[[49m[43mcolunas_modelo2[49m[43m][49m
+Cell [0;32mIn[14], line 10[0m
+[1;32m      5[0m colunas_modelo2 [38;5;241m=[39m [col [38;5;28;01mfor[39;00m col [38;5;129;01min[39;00m df_eventos_2010_2017[38;5;241m.[39mcolumns 
+[1;32m      6[0m                    [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m col[38;5;241m.[39mstartswith([38;5;124m'[39m[38;5;124mregiao_[39m[38;5;124m'[39m) 
+[1;32m      7[0m                    [38;5;129;01mand[39;00m col [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m colunas_excluir_modelo2]
+[1;32m      9[0m df_eventos_2010_2017_modelo2 [38;5;241m=[39m df_eventos_2010_2017[colunas_modelo2 [38;5;241m+[39m colunas_modelo2_renda]
+[0;32m---> 10[0m df_eventos_2018_2024_modelo2 [38;5;241m=[39m [43mdf_eventos_2018_2024[49m[43m[[49m[43mcolunas_modelo2[49m[43m][49m
 
 File [0;32m~/PrevisorReconhecimento/.venv/lib/python3.9/site-packages/pandas/core/frame.py:4108[0m, in [0;36mDataFrame.__getitem__[0;34m(self, key)[0m
 [1;32m   4106[0m     [38;5;28;01mif[39;00m is_iterator(key):
