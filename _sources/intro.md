@@ -1,3 +1,5 @@
+# Introdução
+
 ## Sobre o projeto
 
 O projeto **Previsor de reconhecimento federal** tem como objetivo prever se um desastre registrado no sistema **S2ID** (Sistema Integrado de Informações sobre Desastre) resultará no reconhecimento federal de um estado de calamidade pública ou situação de emergência.
@@ -43,7 +45,4 @@ A base de dados utilizada neste projeto foi extraída de diversas fontes de dado
 
 A tabela a seguir apresenta a origem de cada variável e a sua descrição.
 
-## Conteúdo deste livro
 
-```{tableofcontents}
-```
