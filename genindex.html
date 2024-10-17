@@ -50,6 +50,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -153,8 +154,8 @@
       
     
     
-    <img src="_static/Previsor_logo.png" class="logo__image only-light" alt="Previsor de reconhecimento - Home"/>
-    <script>document.write(`<img src="_static/Previsor_logo.png" class="logo__image only-dark" alt="Previsor de reconhecimento - Home"/>`);</script>
+    <img src="_static/previsor_logo.png" class="logo__image only-light" alt="Previsor de reconhecimento - Home"/>
+    <script>document.write(`<img src="_static/previsor_logo.png" class="logo__image only-dark" alt="Previsor de reconhecimento - Home"/>`);</script>
   
   
 </a></div>
@@ -171,33 +172,27 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Sobre o projeto
-                </a>
-            </li>
-        </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="AnaliseExploratoria.html">Análise exploratória dos dados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Pr%C3%A9%20processamento.html">Pré processamento dos dados</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Regress%C3%A3o%20Log%C3%ADstica%20-%20Modelo%201%202010%20a%202017.html">Regressão logística - Variáveis agregadas (2010 a 2017)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="Regress%C3%A3o%20Log%C3%ADstica%20-%20Modelo%201%202018%20a%202024.html">Regressão logística - Variáveis agregadas (2018 a 2024)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Regress%C3%A3o%20Log%C3%ADstica%20-%20Modelo%202%202010%20a%202017.html">Regressão logística - Variáveis desagregadas (2010 a 2017)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Regress%C3%A3o%20Log%C3%ADstica%20-%20Modelo%202%202018%20a%202024.html">Regressão logística - Variáveis agregadas (2018 a 2024)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Regress%C3%A3o%20Log%C3%ADstica%20-%20conclus%C3%A3o.html">Resultados da regressão logística</a></li>
-
-
-
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Análise exploratória</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="analise_exploratoria_preliminar.html">Análise preliminar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analise_registros_municipios.html">Municípios e desastres</a></li>
 </ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Classifica%C3%A7%C3%A3o%20de%20textos.html">Classificação de textos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="Classifica%C3%A7%C3%A3o%20de%20textos%20-%20balanced%20RandomUnderSampler.html">Classificação de textos com balanceamento “Random Under Sampler”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Classifica%C3%A7%C3%A3o%20de%20textos%20-%20balanced%20RandomOverSampler.html">Classificação de textos com balanceamento “Random Under Sampler”</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Classifica%C3%A7%C3%A3o%20de%20textos%20-%20an%C3%A1lise.html">Classificação de textos</a></li>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pré processamento</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pre_processamento.html">Pré processamento dos dados</a></li>
 </ul>
-</details></li>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Regressão logística</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="reglog_baseline.html">Modelo “base”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reglog_modelo1_2010_2017.html">Regressão logística - Variáveis agregadas (2010 a 2017)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reglog_modelo1_2018_2024.html">Regressão logística - Variáveis agregadas (2018 a 2024)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reglog_modelo2_2010_2017.html">Regressão logística - Variáveis desagregadas (2010 a 2017)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reglog_modelo2_2018_2024.html">Regressão logística - Variáveis agregadas (2018 a 2024)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reglog_conclusao.html">Resultados da regressão logística</a></li>
+
+
+
+
 </ul>
 
     </div>
@@ -239,6 +234,53 @@
         <div class="header-article-item">
 
 <div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/INRIA/scikit-learn-mooc" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/INRIA/scikit-learn-mooc/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
 
 
 
@@ -344,7 +386,7 @@ By The Jupyter Book community
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2022-2024.
       <br/>
     
   </p>
@@ -357,6 +399,19 @@ By The Jupyter Book community
   
   <div class="footer-item">
     
+<div class="extra_footer">
+  <div>
+  <div class="mooc_add">
+   <a href="https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn">Join the full MOOC for better learning!</a>
+  </div>
+  Brought to you under a <a href="https://github.com/INRIA/scikit-learn-mooc/blob/main/LICENSE">CC-BY License</a> by
+  <a href="https://learninglab.inria.fr">Inria Learning Lab</a>,
+  <a href="https://scikit-learn.fondation-inria.fr">scikit-learn @ La Fondation Inria</a>,
+  <a href="https://www.inria-academy.fr/formation/scikit-learn-la-boite-a-outils-de-lapprentissage-automatique/">Inria Academy</a>,
+  with many thanks to the <a href="https://scikit-learn.org">scikit-learn</a> community as a whole!
+</div>
+
+</div>
   </div>
   
 </div>
