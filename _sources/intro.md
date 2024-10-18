@@ -29,7 +29,7 @@ Os seguintes conceitos são relevantes para compreender os testes realizados ao 
 
 Para que seja realizado o reconhecimento federal do ECP ou da SE, o seguinte fluxo deve ser seguido.
 
-```{figure} ./figures/fluxo_reconhecimento.png
+```{figure} ../figures/fluxo_reconhecimento.png
 :name: fluxo-reconhecimento
 
 Fluxo para o reconhecimento federal de ECP e SE

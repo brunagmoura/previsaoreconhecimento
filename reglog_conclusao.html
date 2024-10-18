@@ -62,7 +62,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Regressão logística - Variáveis agregadas (2018 a 2024)" href="reglog_modelo2_2018_2024.html" />
+    <link rel="next" title="Modelo base" href="randomforest_base.html" />
+    <link rel="prev" title="Variáveis desagregadas (2018 a 2024)" href="reglog_modelo2_2018_2024.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -174,6 +175,7 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introdução</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dados.html">Base de dados</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Análise exploratória</span></p>
 <ul class="nav bd-sidenav">
@@ -187,15 +189,26 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Regressão logística</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="reglog_baseline.html">Modelo “base”</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reglog_modelo1_2010_2017.html">Regressão logística - Variáveis agregadas (2010 a 2017)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reglog_modelo1_2018_2024.html">Regressão logística - Variáveis agregadas (2018 a 2024)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reglog_modelo2_2010_2017.html">Regressão logística - Variáveis desagregadas (2010 a 2017)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reglog_modelo2_2018_2024.html">Regressão logística - Variáveis agregadas (2018 a 2024)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reglog_modelo1_2010_2017.html">Variáveis agregadas (2010 a 2017)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reglog_modelo1_2018_2024.html">Variáveis agregadas (2018 a 2024)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reglog_modelo2_2010_2017.html">Variáveis desagregadas (2010 a 2017)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reglog_modelo2_2018_2024.html">Variáveis desagregadas (2018 a 2024)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Resultados da regressão logística</a></li>
 
 
 
 
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Random Forest</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="randomforest_base.html">Modelo base</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classificação de textos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="nlp_tfidf_base.html">Modelo base</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nlp_tfidf_oversampler.html">Balanceamento “Random Under Sampler”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nlp_tfidf_undersampler.html">Balanceamento “Random Under Sampler”</a></li>
 </ul>
 
     </div>
@@ -421,6 +434,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eventos-ocorridos-entre-2018-e-2024">Eventos ocorridos entre 2018 e 2024</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriz-de-confusao">Matriz de confusão</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusao">Conclusão</a></li>
 </ul>
 
@@ -498,39 +512,35 @@ document.write(`
 <td><p>95</p></td>
 <td><p>95</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Accuracy</strong></p></td>
+<tr class="row-even"><td><p>** Métricas gerais**</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Accuracy</p></td>
 <td><p>0.915982</p></td>
 <td><p>0.902283</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Macro avg</strong></p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>Precision</p></td>
+<tr class="row-even"><td><p>Macro avg Precision</p></td>
 <td><p>0.744362</p></td>
 <td><p>0.673263</p></td>
 </tr>
-<tr class="row-odd"><td><p>Recall</p></td>
+<tr class="row-odd"><td><p>Macro avg Recall</p></td>
 <td><p>0.563421</p></td>
 <td><p>0.627368</p></td>
 </tr>
-<tr class="row-even"><td><p>F1-Score</p></td>
+<tr class="row-even"><td><p>Macro avg F1-Score</p></td>
 <td><p>0.587969</p></td>
 <td><p>0.645385</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Weighted avg</strong></p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>Precision</p></td>
+<tr class="row-odd"><td><p>Weighted avg Precision</p></td>
 <td><p>0.892423</p></td>
 <td><p>0.889387</p></td>
 </tr>
-<tr class="row-odd"><td><p>Recall</p></td>
+<tr class="row-even"><td><p>Weighted avg Recall</p></td>
 <td><p>0.915982</p></td>
 <td><p>0.902283</p></td>
 </tr>
-<tr class="row-even"><td><p>F1-Score</p></td>
+<tr class="row-odd"><td><p>Weighted avg F1-Score</p></td>
 <td><p>0.891809</p></td>
 <td><p>0.894841</p></td>
 </tr>
@@ -847,9 +857,19 @@ A média ponderada de precisão e F1-score é alta nos quatro cenários, mas cai
 </table>
 </div>
 </section>
+<section id="matriz-de-confusao">
+<h1>Matriz de confusão<a class="headerlink" href="#matriz-de-confusao" title="Link to this heading">#</a></h1>
+<p>A matriz de confusão do modelo com variáveis desagregadas (2018-2024) indica que o modelo apresenta número alto de casos falsos positivos (porque será?)</p>
+<figure class="align-default" id="matriz-confusa-reglog-modelo2-2018-2024">
+<a class="reference internal image-reference" href="_images/matriz_confusa_reglog_modelo2_2018_2024.png"><img alt="_images/matriz_confusa_reglog_modelo2_2018_2024.png" src="_images/matriz_confusa_reglog_modelo2_2018_2024.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Matriz de confusão modelo regressão logística com variáveis desagregadas (2018 - 2024)</span><a class="headerlink" href="#matriz-confusa-reglog-modelo2-2018-2024" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
 <section id="conclusao">
 <h1>Conclusão<a class="headerlink" href="#conclusao" title="Link to this heading">#</a></h1>
-<p>Modelos sem SMOTE têm uma excelente performance para a classe “Reconhecido”, mas sofrem ao prever a classe “Não reconhecido”.</p>
+<p>Modelos sem SMOTE têm uma melhor performance para a classe “Reconhecido”, mas sofrem ao prever a classe “Não reconhecido”.</p>
 <p>Modelos com SMOTE melhoram significativamente o recall para a classe “Não reconhecido”, mas isso vem à custa de uma redução na precisão e acurácia geral.</p>
 <p>O Modelo com variáveis desagregadas (2018-2024) sem SMOTE apresenta o melhor desempenho geral, com uma boa acurácia e um bom equilíbrio entre precisão e recall.</p>
 <p>No entanto, se o objetivo é melhorar o recall da classe “Não reconhecido”, o uso de SMOTE no modelo com variáveis desagregadas se destaca, embora com uma leve queda na acurácia.</p>
@@ -891,8 +911,17 @@ A média ponderada de precisão e F1-score é alta nos quatro cenários, mas cai
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Regressão logística - Variáveis agregadas (2018 a 2024)</p>
+        <p class="prev-next-title">Variáveis desagregadas (2018 a 2024)</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="randomforest_base.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Modelo base</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -923,6 +952,7 @@ A média ponderada de precisão e F1-score é alta nos quatro cenários, mas cai
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eventos-ocorridos-entre-2018-e-2024">Eventos ocorridos entre 2018 e 2024</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriz-de-confusao">Matriz de confusão</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusao">Conclusão</a></li>
 </ul>
 

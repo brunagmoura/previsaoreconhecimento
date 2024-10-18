@@ -12,27 +12,26 @@ Mais detalhes sobre o pré-processamento dos dados podem ser verificados no cap�
 ```
 ## Modelo "base"
 
-| **Métrica**         | s/ Smote | c/ Smote |
-|---------------------|----------|----------|
-| **Reconhecido**      |          |          |
-| Precision            | 0.923507 | 0.934761 |
-| Recall               | 0.990000 | 0.960000 |
-| F1-Score             | 0.955598 | 0.947213 |
-| Support              | 1000     | 1000     |
-| **Não Reconhecido**  |          |          |
-| Precision            | 0.565217 | 0.411765 |
-| Recall               | 0.136842 | 0.294737 |
-| F1-Score             | 0.220339 | 0.343558 |
-| Support              | 95       | 95       |
-| **Accuracy**         | 0.915982 | 0.902283 |
-| **Macro avg**        |          |          |
-| Precision            | 0.744362 | 0.673263 |
-| Recall               | 0.563421 | 0.627368 |
-| F1-Score             | 0.587969 | 0.645385 |
-| **Weighted avg**     |          |          |
-| Precision            | 0.892423 | 0.889387 |
-| Recall               | 0.915982 | 0.902283 |
-| F1-Score             | 0.891809 | 0.894841 |
+| **Métrica**            | s/ Smote | c/ Smote |
+|------------------------|----------|----------|
+| **Reconhecido**        |          |          |
+| Precision              | 0.923507 | 0.934761 |
+| Recall                 | 0.990000 | 0.960000 |
+| F1-Score               | 0.955598 | 0.947213 |
+| Support                | 1000     | 1000     |
+| **Não Reconhecido**    |          |          |
+| Precision              | 0.565217 | 0.411765 |
+| Recall                 | 0.136842 | 0.294737 |
+| F1-Score               | 0.220339 | 0.343558 |
+| Support                | 95       | 95       |
+| ** Métricas gerais**   | |
+| Accuracy               | 0.915982 | 0.902283 |
+| Macro avg Precision    | 0.744362 | 0.673263 |
+| Macro avg Recall       | 0.563421 | 0.627368 |
+| Macro avg F1-Score     | 0.587969 | 0.645385 |
+| Weighted avg Precision | 0.892423 | 0.889387 |
+| Weighted avg Recall    | 0.915982 | 0.902283 |
+| Weighted avg F1-Score  | 0.891809 | 0.894841 |
 
 
 ## Eventos ocorridos entre 2010 e 2017
@@ -140,10 +139,20 @@ A média ponderada de precisão e F1-score é alta nos quatro cenários, mas cai
 | Weighted Avg F1-Score  | 0.889821               | 0.773180                         | **0.911678**           | 0.793312                        |
 | Total Support          | 2634                   | 2634                             | 1655                   | 1655                            |
 
+## Matriz de confusão
+
+A matriz de confusão do modelo com variáveis desagregadas (2018-2024) indica que o modelo apresenta número alto de casos falsos positivos (porque será?)
+
+```{figure} ../figures/matriz_confusa_reglog_modelo2_2018_2024.png
+:name: matriz_confusa_reglog_modelo2_2018_2024
+:width: 50%
+
+Matriz de confusão modelo regressão logística com variáveis desagregadas (2018 - 2024)
+```
 
 ## Conclusão
 
-Modelos sem SMOTE têm uma excelente performance para a classe "Reconhecido", mas sofrem ao prever a classe "Não reconhecido".
+Modelos sem SMOTE têm uma melhor performance para a classe "Reconhecido", mas sofrem ao prever a classe "Não reconhecido".
 
 Modelos com SMOTE melhoram significativamente o recall para a classe "Não reconhecido", mas isso vem à custa de uma redução na precisão e acurácia geral.
 
